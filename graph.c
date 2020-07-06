@@ -23,7 +23,7 @@ graph_t *g_create(int n, int def)
     return graph;
 }
 
-int g_change_vertex(graph_t *g, int i, int j, int v)
+int g_set_vertex(graph_t *g, int i, int j, int v)
 {
     if (i < 0 || j < 0 || i >= g->n || j >= g->n)
         return -1;
